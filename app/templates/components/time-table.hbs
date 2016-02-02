@@ -1,0 +1,7 @@
+{{#each times as |time|}}
+  <tr>
+    {{#each zones as |zone|}}
+      {{time-cell zone=zone.name hour=time.hour min=time.min}}
+    {{/each}}
+  </tr>
+{{/each}}
