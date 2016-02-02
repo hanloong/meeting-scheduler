@@ -2,6 +2,7 @@ import Ember from 'ember';
 import moment from 'moment';
 
 export default Ember.Component.extend({
+  classNames: ['row', 'form-group'],
   zone: null,
   options: function() {
     return moment.tz.names();

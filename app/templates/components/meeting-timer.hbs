@@ -1,14 +1,16 @@
-<div class='col-md-4'>
-  <form class='padding'>
-    {{day-select selectedDay=setting.day}}
-    <hr/>
-    {{#each zones as |zone|}}
-      {{timezone-select zone=zone}}
-    {{/each}}
-    <button class='btn btn-primary btn-block' {{action 'addZone'}}>Add Timezone</button>
-  </form>
+<div class='col-md-4 col-lg-3 padding'>
+  {{day-select selectedDay=setting.day}}
+  <hr/>
+  {{#each zones as |zone|}}
+    {{timezone-select zone=zone}}
+  {{/each}}
+  <div class='row'>
+    <div class='col-xs-12'>
+      <button class='btn btn-primary btn-block' {{action 'addZone'}}>Add Timezone</button>
+    </div>
+  </div>
 </div>
-<div class='col-md-8'>
+<div class='col-md-8 col-lg-9'>
   <div class='padding'>
     <table class='table table-hover table-sm table-zones'>
       <thead>
